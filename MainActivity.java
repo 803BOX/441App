@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 //well, this really isn't how this should work buuut.......
                 //I need to get to the list screen ^^;
 
-                Intent intent = new Intent(MainActivity.this, ItemListActivity.class);
+                Intent intent = new Intent(MainActivity.this, ItemActivity.class);
                 startActivity(intent);
 
 
