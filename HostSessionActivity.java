@@ -32,6 +32,7 @@ public class HostSessionActivity extends AppCompatActivity {
         enterPassword= findViewById(R.id.enterPassword);
 
 
+        //disable password box when the 'protect' check is empty
         protectCheck.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

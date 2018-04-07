@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button hostButton = findViewById(R.id.hostButton);
         Button joinButton = findViewById(R.id.joinButton);
 
+
         hostButton.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -29,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         joinButton.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
-               // Toast toast = Toast.makeText(getApplicationContext(), "You clicked a button!", Toast.LENGTH_SHORT);
-               // toast.show();
 
-                //well, this really isn't how this should work buuut.......
-                //I need to get to the list screen ^^;
+                //this isn't really the right flow but I need to get from one thing to the next.
+                //should properly lead to a lobby of sorts
+                //but that's Travis's area so I don't have the code
+                //--BJD
 
-                Intent intent = new Intent(MainActivity.this, ItemActivity.class);
+                Intent intent = new Intent(MainActivity.this, TempModeSelectActivity.class);
                 startActivity(intent);
 
 
