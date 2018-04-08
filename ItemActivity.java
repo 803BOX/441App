@@ -49,7 +49,7 @@ public class ItemActivity extends AppCompatActivity {
         answerList.add(2, new String[]{"Str1ng!", "Str1ng!"});
 
         // prob better way to do this?
-        answerCorrect = (answerList.get(0))[0];
+        answerCorrect = (answerList.get(0))[1];
         showHint.setText(answerCorrect);
 
         if (timerMode)
@@ -91,17 +91,14 @@ public class ItemActivity extends AppCompatActivity {
                     {
                         toast.show();
                         position++;
-                        answerCorrect = (answerList.get(position))[0];
+                        answerCorrect = (answerList.get(position))[1];
                         enterHint.setText("");
-                        showHint.setText(answerCorrect);
+                        showHint.setText(answerList.get(position)[0]);
                     }
 
                     //correct answer && end of list
                     else{
                         long intervalTime=(SystemClock.elapsedRealtime()-startTime);
-
-                      //  Toast toast2 = Toast.makeText(getApplicationContext(), "Time: "+String.valueOf(intervalTime)+" ms", Toast.LENGTH_SHORT);
-                      //  toast2.show();
 
                         if(timerMode)
                         {
